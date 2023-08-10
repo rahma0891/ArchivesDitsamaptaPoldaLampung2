@@ -1,0 +1,34 @@
+.arsip-main-content {
+  background: linear-gradient(315deg, #fc0 0%, #fff 45.98%);
+  min-height: 100vh;
+}
+
+.arsip-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.arsip-logo-content {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  align-items: center;
+  gap: 10px;
+}
+.arsip-logo-content h1 {
+  line-height: 1;
+  width: 350px;
+}
+
+.icon-login-item {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: -110px;
+}
+
+.icon-login-item img {
+  width: 100%;
+}

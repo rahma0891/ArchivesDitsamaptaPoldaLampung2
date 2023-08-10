@@ -1,0 +1,43 @@
+.dashboard-content {
+  padding-top: 62px;
+}
+
+.dashboard-heading {
+  color: #fc0;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 204, 0, 0.1);
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+
+.search-input-item {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 10px 20px;
+  border: none;
+}
+
+.search-input-item::placeholder {
+  color: #fc0;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add-document-button {
+  border-radius: 20px;
+  background: #fc0;
+}

@@ -1,0 +1,365 @@
+aside {
+   width: 20%;
+   background-color: #ffcc00;
+   position: fixed;
+   height: 100%;
+   overflow: auto;
+ }
+ 
+ .sidebar {
+   margin: 10%;
+ }
+ 
+ .sidebar-brand {
+   display: flex;
+   align-items: center;
+   background-color: #fff;
+   padding: 8px;
+   gap: 10px;
+   border-radius: 12px;
+   box-shadow: 2px 4px 2px #d4aa02;
+ }
+ 
+ .sidebar-brand h1 {
+   display: flex;
+   text-align: right;
+   font-size: 14px;
+   text-shadow: 2px 2px 2px #bfbfbf;
+ }
+ 
+ .sidebar-menu {
+   margin-top: 50%;
+ }
+ 
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ li a {
+   display: flex;
+   color: #fff;
+   padding: 8px 16px;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 16px;
+   align-items: center;
+   gap: 8px;
+   margin-top: 12px;
+ }
+ 
+ li .dropdown-menu {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ li a.active {
+   background-color: #d4aa02;
+   color: white;
+   border-radius: 8px;
+ }
+ 
+ li a:hover:not(.active) {
+   background-color: #d4aa02;
+   color: white;
+   border-radius: 8px;
+ }
+ 
+ .forflex {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #ffcc00;
+   width: 100%;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   border-radius: 10px;
+ }
+ 
+ .dropdown-content a {
+   color: #fff;
+   margin: 16px 8px;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .dropdown-content a:hover:not(.active) {
+   margin: 16px 8px !important;
+   background-color: #d4aa02;
+   color: #fff;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+ 
+ .content-logout {
+   margin: 0 3%;
+ }
+ 
+ .overlay-logout {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0.7);
+   transition: opacity 500ms;
+   visibility: hidden;
+   opacity: 0;
+ }
+ .overlay-logout:target {
+   visibility: visible;
+   opacity: 1;
+ }
+ 
+ .popup-logout {
+   margin: 60px auto;
+   background: #fff;
+   border-radius: 5px;
+   width: 40%;
+   position: relative;
+   transition: all 5s ease-in-out;
+   overflow: hidden;
+ }
+ 
+ .popup-logout h2 {
+   margin: 0;
+   color: #fff;
+   background-color: #ffcc00;
+   padding: 20px;
+ }
+ .popup-logout .close-logout {
+   position: absolute;
+   top: 10px;
+   right: 30px;
+   transition: all 200ms;
+   font-size: 30px;
+   font-weight: bold;
+   text-decoration: none;
+   color: #fff;
+ }
+ .popup-logout .close-logout:hover {
+   color: #333;
+ }
+ 
+ .btn-popup {
+   display: flex;
+   justify-content: flex-end;
+   padding-bottom: 20px;
+   gap: 8px;
+ }
+ 
+ .btn-popup a {
+   padding: 12px 8px;
+   width: 100px;
+   border-radius: 8px;
+   background-color: #ffcc00;
+   text-align: center;
+   text-decoration: none;
+ }
+ 
+ .btn-popup a:hover {
+   color: #fff;
+ }
+ 
+ /* sidebar end */
+ 
+ /* menu utama */
+ 
+ .main-dashboard {
+   margin-left: 20%;
+   padding: 1px 16px;
+   min-height: 600px;
+ }
+ 
+ .container {
+   margin: 16px;
+ }
+ 
+ .head-main {
+   display: flex;
+   justify-content: flex-end;
+ }
+ 
+ .head-main a {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   font-weight: 600;
+   color: #ffcc00;
+ }
+ 
+ .card-menu {
+   display: flex;
+   gap: 5%;
+   justify-content: center;
+   margin-top: 32px;
+ }
+ 
+ .card {
+   background-color: white;
+   box-shadow: -2px 12px 8px #bfbfbf;
+   border-radius: 8px;
+   width: 25%;
+   display: flex;
+ }
+ 
+ .card-decor {
+   padding: 2%;
+   border-radius: 8px 0 0 8px;
+ }
+ 
+ .card-body {
+   padding: 12px;
+ }
+ 
+ .card-body h2 {
+   font-weight: 500;
+ }
+ 
+ .card-body p {
+   font-size: 32px;
+   font-weight: 800;
+   margin: 0;
+ }
+ 
+ .card-stats {
+   display: flex;
+   gap: 5%;
+   justify-content: center;
+   width: 100%;
+ }
+ 
+ .card-2 {
+   background-color: white;
+   box-shadow: -2px 12px 8px #bfbfbf;
+   border-radius: 8px;
+   width: 40%;
+   display: flex;
+   margin-top: 24px;
+ }
+ 
+ .card-2 .card-body {
+   width: 100%;
+ }
+ 
+ .card-2 .card-body h2 {
+   text-align: center;
+ }
+ 
+ /* pie chart */
+ 
+ .pie-chart {
+   background: radial-gradient(circle closest-side, transparent 50%, white 0),
+     conic-gradient(
+       #4e79a7 0,
+       #4e79a7 23%,
+       #f28e2c 0,
+       #f28e2c 36.9%,
+       #e15759 0,
+       #e15759 46.6%,
+       #76b7b2 0,
+       #76b7b2 52.7%,
+       #59a14f 0,
+       #59a14f 56.3%,
+       #ffd84d 0,
+       #ffd84d 60.5%,
+       #af7aa1 0,
+       #af7aa1 62.9%,
+       #ff9da7 0,
+       #ff9da7 65.9%,
+       #9c755f 0,
+       #9c755f 70.7%,
+       #bab0ab 0,
+       #bab0ab 82.8%,
+       #253a50 0,
+       #253a50 92.5%,
+       #954f09 0,
+       #954f09 99.8%
+     );
+   min-height: 250px;
+   margin: 0;
+   display: flex;
+   gap: 20px;
+   justify-content: space-between;
+ }
+ .pie-chart figcaption {
+   bottom: 1em;
+   right: 1em;
+   font-size: smaller;
+   text-align: right;
+ }
+ .pie-chart span:after {
+   display: inline-block;
+   content: "";
+   width: 0.8em;
+   height: 0.8em;
+   margin-left: 0.4em;
+   height: 0.8em;
+   border-radius: 0.2em;
+   background: currentColor;
+ }
+ 
+ /* bar chart */
+ 
+ .barchart-Wrapper {
+   display: table;
+   margin: 20px 0;
+   height: 152px;
+ }
+ 
+ .barChart-Container {
+   display: table-cell;
+   width: 100%;
+   height: 100%;
+   padding-left: 15px;
+ }
+ 
+ .barchart {
+   display: table;
+   table-layout: fixed;
+   height: 100%;
+   width: 100%;
+   border-bottom: 3px solid tomato;
+ }
+ 
+ .barchart-Col {
+   vertical-align: bottom;
+   display: table-cell;
+   height: 100%;
+ }
+ 
+ .barchart-Col + .barchart-Col {
+   border-left: 4px solid transparent;
+ }
+ 
+ .barchart-Bar {
+   height: 0;
+   transition: height 0.5s 2s;
+   width: 20px;
+   margin: auto;
+ }
+ 
+ .barchart-Bar:after {
+   content: attr(attr-height);
+   color: white;
+   position: absolute;
+   text-align: center;
+   width: 100%;
+ }
+ 
+ .barchart-BarFooter {
+   position: absolute;
+   text-align: center;
+   height: 10%;
+   width: 100%;
+ }
+ 
